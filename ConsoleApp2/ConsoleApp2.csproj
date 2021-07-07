@@ -1,0 +1,380 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F00CA8A7-F1F3-4BD8-BE62-980348B31C79}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>ConsoleApp2</RootNamespace>
+    <AssemblyName>ConsoleApp2</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>icon_football121212.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>
+    </StartupObject>
+  </PropertyGroup>
+  <PropertyGroup />
+  <ItemGroup>
+    <Reference Include="Bunifu_UI_v1.52">
+      <HintPath>..\..\Bunifu_UI_v1.52.dll</HintPath>
+    </Reference>
+    <Reference Include="Guna.UI2">
+      <HintPath>..\..\..\..\Desktop\Guna.UI2.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Choose.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Choose.Designer.cs">
+      <DependentUpon>Choose.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Statistcs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Statistcs.Designer.cs">
+      <DependentUpon>Statistcs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Historyform.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Historyform.Designer.cs">
+      <DependentUpon>Historyform.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Loading.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Loading.Designer.cs">
+      <DependentUpon>Loading.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Menu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu.Designer.cs">
+      <DependentUpon>Menu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Player.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Player.Designer.cs">
+      <DependentUpon>Player.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Goalie.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Goalie.Designer.cs">
+      <DependentUpon>Goalie.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Current.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Current.Designer.cs">
+      <DependentUpon>Current.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Playing.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Playing.Designer.cs">
+      <DependentUpon>Playing.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ImageProcess.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="RasterImage.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Choose.resx">
+      <DependentUpon>Choose.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Historyform.resx">
+      <DependentUpon>Historyform.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Loading.resx">
+      <DependentUpon>Loading.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu.resx">
+      <DependentUpon>Menu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Player.resx">
+      <DependentUpon>Player.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Goalie.resx">
+      <DependentUpon>Goalie.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Current.resx">
+      <DependentUpon>Current.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Playing.resx">
+      <DependentUpon>Playing.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistcs.resx">
+      <DependentUpon>Statistcs.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="AxWMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="WMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\output-onlinepngtools %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\goalkeeper-football-illustration-cartoon-goalkeeper.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Goalie.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Goaliee.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\output-onlinepngtools %2813%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\output-onlinepngtools %2814%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ball2.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ball2-0 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dccwm24-630b8838-739d-419f-9c32-68bf84d971ab.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\vvvvb.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pika.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pika2.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\output-onlinepngtools %2810%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bullet.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\captinmagid.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mushroom BOOST.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kissclipart-spud-n-mud-a-story-from-farmer-richys-sunnyflo-cc37b74169fafbe1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\output-onlinepngtools %2815%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\output-onlinepngtools %2816%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\0d0c16b7ef6b11f3fea5faf2e52e08c0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fireball-gif-clipart-8.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Fireball.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\boost.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %282%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %281%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\soccer-cartoon-png-favpng-NEHxnfdm2eS1YRpC5DWCGDMLW_t.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\soccer-cartoon-png-favpng-uvPveUuE016frrDpAM2aUBShu_t.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\goalkeper 1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %283%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\barber-pole-2-gif.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blue_red.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Batman.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Deadpool.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Thor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\captain-america-hulk-thor-black-widow-drawing-avengers-cute.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\png-transparent-black-widow-iron-man-clint-barton-chibi-marvel-comics-black-widow-comics-avengers-superhero.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\flash-iron-man-spider-man-captain-marvel-superhero-q-version-of-iron-man.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\177-1775009_chibi-spider-man-homecoming.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\output-onlinepngtools %2817%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Goku.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\output-onlinepngtools %2818%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\output-onlinepngtools %2819%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Iron-Man-Captain-America-Chibi-Iron-Man-transparent-.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\output-onlinepngtools %2820%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Hulk.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Hulk1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Thanos.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Frank.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\output-onlinepngtools %2821%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\output-onlinepngtools %2822%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Book.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\person-searching-online-and-book-clipart-gif-2.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconfinder_arrow-right_3688522.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconfinder_arrow-right_36885221.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconfinder_arrow-right_36885222.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\barcelona.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bayren.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\faisaly.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\madried1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\milan.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\united.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\midair.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="icon_football121212.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
